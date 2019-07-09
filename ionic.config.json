@@ -1,5 +1,7 @@
 {
   "name": "rds-empleos",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
