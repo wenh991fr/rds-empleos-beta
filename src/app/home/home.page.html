@@ -1,13 +1,62 @@
 <ion-header>
   <ion-toolbar>
-   <!-- <ion-title>
-      Ionic Blank
-    </ion-title>-->
+    <ion-title>
+      RDS Encuentra
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-  <p>.....loading</p>
-  </div>
+ <!-- <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide *ngFor="let empresa of empresas">
+      <div class="slide-img-padding">
+        <img [src]="empresa.img"/>
+      </div>
+      <div >
+        <h3>{{empresa.titulo}}</h3>
+      </div>
+      <div class="slide-button-padding">
+        <ion-button color="primary">{{empresa.boton}}</ion-button>
+      </div>
+    </ion-slide>
+  </ion-slides>-->
+
+  <ion-card *ngFor="let empresa of empresas">
+    <ion-item>
+      <ion-label>
+        <div></div>
+        <h1 class="ion-text-center card-text-css">{{empresa.titulo}}</h1>
+      </ion-label>
+    </ion-item>
+    <ion-card-content>
+      <div class="card-img-padding">
+        <img [src]="empresa.img" (click)="openBlank_x(empresa.link)"/>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <div ></div>
+
+  <!--<ion-fab vertical="bottom" horizontal="end">-->
+    <!--<ion-fab-button>Share</ion-fab-button>-->
+
+    <!--<ion-fab-list side="top">-->
+      <!--<ion-fab-button>Facebook</ion-fab-button>-->
+      <!--<ion-fab-button>Twitter</ion-fab-button>-->
+      <!--<ion-fab-button>Youtube</ion-fab-button>-->
+    <!--</ion-fab-list>-->
+
+    <!--<ion-fab-list side="start">-->
+      <!--<ion-fab-button>Vimeo</ion-fab-button>-->
+    <!--</ion-fab-list>-->
+
+  <!--</ion-fab>-->
+
+
+
+  <!--<ion-fab vertical="bottom" horizontal="end" slot="fixed">-->
+  <!--<ion-fab-button color="light" (click)="openBlank_x('https://portal.rds.hn/')">-->
+    <!--<img src="../../assets/img/rds.png" />-->
+  <!--</ion-fab-button>-->
+  <!--</ion-fab>-->
+
 </ion-content>

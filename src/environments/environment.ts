@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+    production: false
+};
+
+export const firebaseConfig = {
+    apiKey: "AIzaSyBkvBVnkuYZfrvXdEmXCut7YC5XZLsJ7vQ",
+    authDomain: "rds-encuentra.firebaseapp.com",
+    databaseURL: "https://rds-encuentra.firebaseio.com",
+    projectId: "rds-encuentra",
+    storageBucket: "rds-encuentra.appspot.com",
+    messagingSenderId: "726916427230",
+    appId: "1:726916427230:web:20036fe6e74ea2ac"
 };
 
 /*
